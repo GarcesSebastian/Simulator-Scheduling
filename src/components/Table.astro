@@ -1,0 +1,54 @@
+<div class="w-full h-fit flex flex-col items-center p-6 space-y-4 z-10">
+	<span class="text-slate-400 w-full text-center text-3xl font-semibold font-mono pb-4">
+		Create By Sebxstt
+	</span>
+
+    <!-- Algorithm Selection -->
+    <div class="w-full max-w-md">
+        <label for="algorithm" class="block mb-2 text-black">Select Algorithm:</label>
+        <select id="algorithm" class="w-full p-2 border border-gray-300 rounded text-black">
+            <option value="FCFS">FCFS</option>
+            <option value="SJF">SJF</option>
+        </select>
+    </div>
+
+    <!-- Number of Processes -->
+    <div class="w-full max-w-md flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-2">
+		<input type="number" id="num-processes" placeholder="Number process default: 5" min="1" class="w-full p-2 border border-gray-300 rounded text-black outline-blue-400">
+        <button id="generate-processes" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 w-full">Generate Processes</button>
+    </div>
+
+	<input type="number" id="num-velocity" placeholder="Velocity default: 1" min="1" class="w-full max-w-md p-2 border border-gray-300 rounded text-black outline-blue-400">
+
+    <!-- Process Inputs -->
+    <div id="process-inputs" class="w-full max-w-md"></div>
+
+    <!-- Start and Reset Buttons -->
+    <div class="w-full max-w-md flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-2">
+        <button id="start-button" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 flex-1 max-md:w-full">Start</button>
+        <button id="reset-button" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 flex-1 max-md:w-full">Reset</button>
+    </div>
+    
+    <!-- Table -->
+    <div class="w-full max-w-4xl overflow-x-auto">
+        <table class="min-w-full bg-white border border-gray-300 shadow-md rounded-lg mt-4">
+            <thead class="bg-blue-500 text-white uppercase text-sm leading-normal">
+                <tr>
+                    <th class="py-3 px-6 text-center">Process</th>
+                    <th class="py-3 px-6 text-center">Arrival Time</th>
+                    <th class="py-3 px-6 text-center">Burst Time</th>
+                    <th class="py-3 px-6 text-center">Completion Time</th>
+                    <th class="py-3 px-6 text-center">Turnaround Time</th>
+                    <th class="py-3 px-6 text-center">Waiting Time</th>
+                </tr>
+            </thead>
+            <tbody class="text-gray-700 text-sm font-light"></tbody>
+        </table>
+    </div>
+
+    <!-- Log -->
+    <div class="w-full max-w-4xl">
+        <h2 class="text-xl font-semibold mb-2 text-black">Log:</h2>
+        <pre id="log" class="bg-gray-200 p-4 rounded overflow-auto text-black"></pre>
+    </div>
+</div>
