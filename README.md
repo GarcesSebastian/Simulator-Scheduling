@@ -1,52 +1,52 @@
 # 🚀 Simulator Scheduling
 
-Welcome to Simulator Scheduling - your go-to tool for visualizing and understanding process scheduling algorithms!
+¡Bienvenido al Simulator Scheduling - tu herramienta perfecta para visualizar y comprender los algoritmos de planificación de procesos!
 
-## 🌟 Features
+## 🌟 Características
 
-- 🔄 Simulate FCFS (First-Come, First-Served) and SJF (Shortest Job First) algorithms
-- 🔢 Customizable number of processes
-- ⏩ Adjustable simulation speed
-- ⏯️ Start, pause, and resume functionality
-- 🔄 Reset option for quick restarts
-- ✏️ Real-time data editing
-- 📊 Live progress tracking
-- 📁 Import data from JSON, CSV, or TXT files
+- 🔄 Simula algoritmos FCFS (First-Come, First-Served) y SJF (Shortest Job First)
+- 🔢 Número personalizable de procesos
+- ⏩ Velocidad de simulación ajustable
+- ⏯️ Funciones de inicio, pausa y reanudación
+- 🔄 Opción de reinicio para comenzar rápidamente
+- ✏️ Edición de datos en tiempo real
+- 📊 Seguimiento de progreso en vivo
+- 📁 Importación de datos desde archivos JSON, CSV o TXT
 
-## 🚀 Getting Started
+## 🚀 Cómo Empezar
 
-1. Clone this repository
-2. Install dependencies with `npm install`
-3. Run the project using `npm start`
+1. Clona este repositorio
+2. Instala las dependencias con `npm install`
+3. Ejecuta el proyecto usando `npm run dev`
 
-## 🎮 How to Use
+## 🎮 Cómo Usar
 
-1. **Choose Your Algorithm**: Select between FCFS and SJF from the dropdown menu.
-2. **Set Up Processes**: Enter the number of processes and click 'Generate Processes'.
-3. **Adjust Speed**: Set the simulation velocity (1-10) for your preferred pace.
-4. **Start Simulating**: Hit 'Start' to begin. Use 'Pause' to halt and 'Resume' to continue.
-5. **Monitor Progress**: Watch the simulation unfold in real-time through the progress log.
-6. **Modify on the Fly**: Double-click any cell in the process table to edit values mid-simulation.
-7. **Import Data**: Bring in your own datasets using JSON, CSV, or TXT files for custom scenarios.
+1. **Elige tu Algoritmo**: Selecciona entre FCFS y SJF en el menú desplegable.
+2. **Configura los Procesos**: Ingresa el número de procesos y haz clic en 'Generar Procesos'.
+3. **Ajusta la Velocidad**: Establece la velocidad de simulación (1-10) a tu gusto.
+4. **Inicia la Simulación**: Presiona 'Iniciar' para comenzar. Usa 'Pausar' para detener y 'Reanudar' para continuar.
+5. **Monitorea el Progreso**: Observa cómo se desarrolla la simulación en tiempo real a través del registro de progreso.
+6. **Modifica sobre la Marcha**: Haz doble clic en cualquier celda de la tabla de procesos para editar valores durante la simulación.
+7. **Importa Datos**: Utiliza tus propios conjuntos de datos usando archivos JSON, CSV o TXT para escenarios personalizados.
 
-## 💡 Why Use Simulator Scheduling?
+## 💡 ¿Por Qué Usar el Simulador de Scheduling?
 
-- **Educational Tool**: Perfect for students learning about OS scheduling algorithms.
-- **Performance Analysis**: Compare FCFS and SJF performance with various process sets.
-- **Customizable Scenarios**: Import or manually edit data to test specific situations.
-- **Real-time Visualization**: See how scheduling decisions affect process execution.
-- **User-Friendly Interface**: Intuitive controls make it easy for beginners and experts alike.
+- **Herramienta Educativa**: Ideal para estudiantes que aprenden sobre algoritmos de planificación en sistemas operativos.
+- **Análisis de Rendimiento**: Compara el desempeño de FCFS y SJF con varios conjuntos de procesos.
+- **Escenarios Personalizables**: Importa o edita manualmente los datos para probar situaciones específicas.
+- **Visualización en Tiempo Real**: Observa cómo las decisiones de planificación afectan la ejecución de procesos.
+- **Interfaz Amigable**: Controles intuitivos que facilitan su uso tanto a principiantes como a expertos.
 
-## 🔍 Need Help?
+## 🔍 ¿Necesitas Ayuda?
 
-Click the 'Guide' button in the app for a comprehensive walkthrough of all features!
+¡Haz clic en el botón 'Guía' en la aplicación para obtener un tutorial completo de todas las funciones!
 
-## 🤝 Contributing
+## 🤝 Contribuciones
 
-We welcome contributions! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to get started.
+¡Damos la bienvenida a las contribuciones! Consulta nuestro archivo [CONTRIBUIR.md](CONTRIBUIR.md) para obtener detalles sobre cómo empezar.
 
-## 📄 License
+## 📄 Licencia
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+Este proyecto está licenciado bajo la Licencia MIT - consulta el archivo [LICENCIA.md](LICENCIA.md) para más detalles.
 
-Happy Scheduling! 🎉
+¡Feliz Planificación! 🎉
