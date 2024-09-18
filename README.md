@@ -60,6 +60,6 @@ Tailwind CSS es un framework de utilidades CSS que permite diseñar interfaces d
 
 ## 📄 Licencia
 
-Este proyecto está licenciado bajo la Licencia MIT - consulta el archivo [LICENCIA.md](LICENSE.txt) para más detalles.
+Este proyecto está licenciado bajo la Licencia MIT - consulta el archivo [LICENSE.txt](LICENSE.txt) para más detalles.
 
 ¡Feliz Planificación! 🎉
