@@ -310,7 +310,7 @@ function renderTable() {
 
     template.forEach(item => {
         const tr = document.createElement("tr");
-        tr.className = "border-b border-gray-200 hover:bg-gray-100";
+        tr.className = "border-b border-gray-200";
 
         const thProcess = document.createElement("th");
         thProcess.className = "border-2 px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider";
@@ -319,7 +319,7 @@ function renderTable() {
 
         item.colums.forEach(colum => {
             const th = document.createElement("th");
-            th.className = "border-2 px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider";
+            th.className = "border-2 hover:bg-gray-100 cursor-pointer px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider";
             th.style.position = 'relative';
             th.setAttribute('data-key', colum.key);
             th.setAttribute('data-value', colum.value);
