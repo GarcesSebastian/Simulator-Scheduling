@@ -38,9 +38,11 @@ const ImportDataPopup = () => {
     reader.onload = (e) => {
       try {
         const content = e.target.result;
-        const lines = content.split('\n');
+        const lines = content.split(/[\r\n]+/).filter(line => line.trim() !== '');
         const headers = lines[0].toLowerCase().split(',');
-        const expectedHeaders = ['process', 'at', 'bt', 'ct', 'tat', 'wt\r'];
+        const expectedHeaders = ['process', 'at', 'bt', 'ct', 'tat', 'wt'];
+
+        console.log(headers, lines);
 
         if (!expectedHeaders.every(header => headers.includes(header))) {
           throw new Error('File headers do not match the expected format');
