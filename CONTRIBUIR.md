@@ -16,12 +16,6 @@
 
 4. **Documentación**: Si haces cambios significativos en la funcionalidad del proyecto, asegúrate de actualizar la documentación en consecuencia.
 
-## Directrices para Contribuir
-
-- **Código Limpio**: Escribe código claro y bien documentado. Sigue las [convenciones de codificación](CONTRIBUTING.md) establecidas en el proyecto.
-- **Pruebas**: Incluye pruebas para cualquier nuevo código o funcionalidades que agregues.
-- **Formato**: Usa las herramientas de formateo y linting configuradas en el proyecto para asegurar la consistencia.
-
 ## Preguntas
 
 Si tienes preguntas, no dudes en contactar a través de [issues](https://github.com/GarcesSebastian/Simulator-Scheduling/issues) o [email](mailto:sebastiangarces152@gmail.com).
