@@ -1,0 +1,30 @@
+# Contribuir al Proyecto
+
+¡Gracias por tu interés en contribuir a nuestro proyecto! Aquí te explicamos cómo puedes colaborar:
+
+## Cómo Contribuir
+
+1. **Bugs y Nuevas Funcionalidades**: Si encuentras un error o tienes una idea para una nueva funcionalidad, abre un [issue](https://github.com/GarcesSebastian/Simulator-Scheduling/issues) en GitHub. Proporciona detalles claros y, si es posible, pasos para reproducir el problema.
+
+2. **Solicitudes de Extracción (Pull Requests)**:
+   - **Forkea el Repositorio**: Haz un fork del repositorio a tu cuenta de GitHub.
+   - **Crea una Rama**: Crea una rama para tu contribución. Usa un nombre descriptivo para la rama, por ejemplo, `fix-typo` o `add-feature-x`.
+   - **Realiza los Cambios**: Realiza tus cambios y asegúrate de que el código esté bien documentado y probado.
+   - **Envía una Solicitud de Extracción**: Envía una solicitud de extracción (pull request) con una descripción clara de los cambios. Incluye detalles sobre la razón de los cambios y cómo probarlos.
+
+3. **Revisión de Código**: Nuestro equipo revisará tu solicitud de extracción y te proporcionará comentarios si es necesario. Agradecemos cualquier sugerencia y corrección.
+
+4. **Documentación**: Si haces cambios significativos en la funcionalidad del proyecto, asegúrate de actualizar la documentación en consecuencia.
+
+## Directrices para Contribuir
+
+- **Código Limpio**: Escribe código claro y bien documentado. Sigue las [convenciones de codificación](CONTRIBUTING.md) establecidas en el proyecto.
+- **Pruebas**: Incluye pruebas para cualquier nuevo código o funcionalidades que agregues.
+- **Formato**: Usa las herramientas de formateo y linting configuradas en el proyecto para asegurar la consistencia.
+
+## Preguntas
+
+Si tienes preguntas, no dudes en contactar al equipo a través de [issues](https://github.com/GarcesSebastian/Simulator-Scheduling/issues) o [contacto](mailto:[sebastiangarces152@gmail.com]).
+
+¡Esperamos tus contribuciones y gracias por tu apoyo!
+
