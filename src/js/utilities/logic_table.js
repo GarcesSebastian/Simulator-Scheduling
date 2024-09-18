@@ -45,6 +45,19 @@ document.getElementById('start-button').addEventListener('click', async () => {
 
 document.getElementById('generate-processes').addEventListener('click', () => {
     lengthProcess = document.getElementById('num-processes').value;
+    const min = 1
+    const max = 1000
+
+    if(lengthProcess < min){
+        lengthProcess = 5
+    }
+
+    if(lengthProcess > max){
+        lengthProcess = max
+    }
+
+    document.getElementById("num-processes").value = lengthProcess
+
     if (isRunning) {
         pauseProcessing();
         isNewTemplate = true;
