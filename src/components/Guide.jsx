@@ -33,6 +33,14 @@ const SimuladorSchedulingGuia = () => {
       title: "Seguimiento del Progreso",
       description: "Observa la sección de 'Log' para ver el progreso detallado de la simulación en tiempo real.",
     },
+    {
+      title: "Importar JSON",
+      description: "Usa la función 'Import JSON' para cargar datos de procesos desde un archivo JSON. Asegúrate de que el formato coincida con el ejemplo proporcionado.",
+    },
+    {
+      title: "Importar CSV o Texto",
+      description: "Utiliza la función 'Import CSV or Text' para cargar datos desde un archivo CSV o de texto. El archivo debe tener encabezados y seguir el formato especificado.",
+    },
   ];
 
   const togglePopup = () => {
@@ -48,7 +56,7 @@ const SimuladorSchedulingGuia = () => {
   };
 
   return (
-    <div className="p-4 w-full mx-auto flex justify-center items-center">
+    <div className="w-full mx-auto flex justify-center items-center col-span-2">
       <button
         onClick={togglePopup}
         className="bg-green-500 w-full max-w-md text-white px-4 py-2 rounded hover:bg-green-600"
@@ -73,6 +81,7 @@ const SimuladorSchedulingGuia = () => {
                 <span className="text-2xl mr-2">ℹ️</span>
                 <div>
                   <h3 className="font-bold">Consejo {currentTip + 1} de {tips.length}</h3>
+                  <h4 className="font-semibold">{tips[currentTip].title}</h4>
                   <p>{tips[currentTip].description}</p>
                 </div>
               </div>

@@ -1,14 +1,30 @@
 ---
- import Guide from './Guide.jsx'
+import Guide from './Guide.jsx';
+import ImportJsonPopup from './ImportJsonPopup.jsx';
+import ImportCsvPopup from './ImportCsvPopup.jsx';
 ---
 
 <div class="w-full h-fit flex flex-col items-center p-6 space-y-4 z-10">
-	<span class="text-slate-400 w-fit h-fit text-center text-3xl font-bold flex flex-col gap-y-2">
+    <span class="text-slate-400 w-fit h-fit text-center text-3xl font-bold flex flex-col gap-y-2">
         <a href="https://github.com/GarcesSebastian/Simulator-Scheduling" class="text-blue-400 text-wrap hover:underline">By Sebxstt</a>
-	</span>
+    </span>
     
-    <Guide client:load/>
+    
+    <div class="w-full max-w-md grid grid-cols-2 gap-2">
+        <Guide client:load/>
 
+        <!-- Import JSON Button -->
+        <button id="import-json-button" class="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600 col-span-1">
+            Import JSON
+        </button>
+
+        <!-- Import CSV Button -->
+        <button id="import-csv-button" class="bg-green-500 px-4 py-2 text-white rounded hover:bg-green-600 col-span-1">
+            Import CSV or TXT
+        </button>
+
+    </div>
+    
     <!-- Algorithm Selection -->
     <div class="w-full max-w-md">
         <label for="algorithm" class="block mb-2 text-black">Select Algorithm:</label>
@@ -17,18 +33,18 @@
             <option value="SJF">SJF</option>
         </select>
     </div>
-
+    
     <!-- Number of Processes -->
     <div class="w-full max-w-md flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-2">
-		<input type="number" id="num-processes" placeholder="Number process default: 5" min="1" class="w-full p-2 border border-gray-300 rounded text-black outline-blue-400">
+        <input type="number" id="num-processes" placeholder="Number process default: 5" min="1" class="w-full p-2 border border-gray-300 rounded text-black outline-blue-400">
         <button id="generate-processes" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 w-full">Generate Processes</button>
     </div>
-
-	<input type="number" id="num-velocity" placeholder="Velocity default: 1" min="1" class="w-full max-w-md p-2 border border-gray-300 rounded text-black outline-blue-400">
-
+    
+    <input type="number" id="num-velocity" placeholder="Velocity default: 1" min="1" class="w-full max-w-md p-2 border border-gray-300 rounded text-black outline-blue-400">
+    
     <!-- Process Inputs -->
     <div id="process-inputs" class="w-full max-w-md"></div>
-
+    
     <!-- Start and Reset Buttons -->
     <div class="w-full max-w-md flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-2">
         <button id="start-button" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 flex-1 max-md:w-full">Start</button>
@@ -51,10 +67,13 @@
             <tbody class="text-gray-700 text-sm font-light"></tbody>
         </table>
     </div>
-
+    
     <!-- Log -->
     <div class="w-full max-w-4xl">
         <h2 class="text-xl font-semibold mb-2 text-black">Log:</h2>
         <pre id="log" class="bg-gray-200 p-4 rounded overflow-auto text-black"></pre>
     </div>
+    
+    <ImportJsonPopup client:load />
+    <ImportCsvPopup client:load />
 </div>

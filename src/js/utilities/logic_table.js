@@ -330,7 +330,8 @@ function renderTable() {
         thProcess.textContent = item.process;
         tr.appendChild(thProcess);
 
-        item.colums.forEach(colum => {
+        ['at', 'bt', 'ct', 'tat', 'wt'].forEach(key => {
+            const colum = item.colums.find(col => col.key === key) || { key, value: 0 };
             const th = document.createElement("th");
             th.className = "border-2 hover:bg-gray-100 cursor-pointer px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider";
             th.style.position = 'relative';
@@ -345,11 +346,10 @@ function renderTable() {
             input.style.left = '0';
             input.style.width = '100%';
             input.style.height = '100%';
-            input.type = 'number';  // Allow only numbers
+            input.type = 'number';
             input.value = colum.value;
             input.className = 'abosolute top-0 left-0 p-1 border border-gray-300 rounded text-center outline-blue-400';
 
-            // Make cell editable on double-click
             th.addEventListener('dblclick', () => {
                 th.appendChild(input);
                 input.focus();
@@ -384,3 +384,29 @@ function logProgress(message) {
 function clearLog() {
     document.getElementById('log').textContent = '';
 }
+
+document.addEventListener('dataImported', function(event) {
+    const importedData = event.detail;
+    
+    if (Array.isArray(importedData) && importedData.length > 0 && 
+        importedData[0].hasOwnProperty('process') && 
+        Array.isArray(importedData[0].colums)) {
+        
+        template = importedData.map(item => ({
+            process: item.process,
+            colums: item.colums.map(col => ({
+                key: col.key,
+                value: parseInt(col.value, 10) || 0
+            }))
+        }));
+        
+        isCreate = true;
+        lengthProcess = template.length;
+        renderTable();
+        logProgress('Data imported successfully. Table updated.');
+        
+        document.getElementById('num-processes').value = lengthProcess;
+    } else {
+        logProgress('Error: Invalid data format.');
+    }
+});
